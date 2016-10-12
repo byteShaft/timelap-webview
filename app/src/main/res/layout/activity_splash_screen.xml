@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="com.byteshaft.timelap.SplashScreen">
+
+    <LinearLayout
+        android:id="@+id/buttons_id"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_above="@+id/copyrights"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_login"
+            android:text="Log in"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:theme="@style/AppTheme.Button"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/button_support"
+            android:text="Support"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+
+            android:theme="@style/AppTheme.ButtonTwo"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/copyrights"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text=" TimeLapse Middle East 2016 | all rights reserved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
